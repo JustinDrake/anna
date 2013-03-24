@@ -1,0 +1,195 @@
+<!doctype html>
+
+<head>
+    <meta charset='utf-8' http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <title>Anna Goldenberg</title>
+
+    <link href='css/main.css' rel='stylesheet'>
+    <link href='css/bootstrap.css' rel='stylesheet'>
+    <link href='css/font-awesome.css' rel='stylesheet'>
+
+    <link href='img/favicon.ico' rel='shortcut icon'> <!-- ??? Doesn't work -->
+
+    <!-- Library -->
+    <script src='js/lib/jquery.js'></script>
+    <script src='js/lib/bootstrap.js'></script>
+    <script src='js/lib/carousel.js'></script>
+    <script src='js/lib/mustache.js'></script>
+
+    <!-- Application -->
+    <script src='js/data.js'></script>
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+    <div class='navbar navbar-fixed-top'>
+        <div class='navbar-inner'>
+            <div class='container'>
+                <div class='brand'>Anna Goldenberg</div>
+                <div>
+                    <ul class='nav panes-nav english'>
+                        <li><a>Bio</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Print</a></li>
+                        <li><a>Visual</a></li>
+                        <li><a>Audio</a></li>
+                    </ul>
+                    <ul class='nav panes-nav german' style='display:none'>
+                        <li><a>Biografie</a></li>
+                        <li><a>Kontakt</a></li>
+                        <li><a>Print</a></li>
+                        <li><a>Foto</a></li>
+                        <li><a>Audio</a></li>
+                    </ul>
+                </div>
+                <div class='pull-right'>
+                    <div class='btn-group' data-toggle='buttons-radio'>
+                        <span class='btn active' id='english'>English</span>
+                        <span class='btn' id='german'>Deutsch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='wrap'>
+        <br>
+        <br>
+        <br>
+
+        <div class='container'>
+            <!-- Bio -->
+            <div class='row'>
+                <legend>Bio</legend>
+            </div>
+            <div id='bio-container'>
+                <div class='row well'>
+                    <div class='span3'>
+                        <img src='img/bio.jpg' />
+                    </div>
+                    <div class='offset1 span6'>
+                        <p class='lead english'>Anna Goldenberg is a multimedia journalist publishing in both English and German. Anna is currently completing her graduate degree in Digital Media at the Columbia University Graduate School of Journalism, which gave her the chance to pursue the widest variety of stories possible using an Olympus recorder, a DSLR camera and a notepad. She reported from polling sites, civil courts, yeshivas, Scrabble tournaments and neuroscience laboratories for Brooklyncampaign.com, The New York World and Uptown Radio.</p>                         
+                        <p>Born and bred in Austria, Anna earned her B.A. in Politics, Psychology and Sociology at the University of Cambridge, UK, where she wrote for the student newspapers Varsity and The Cambridge Student. Anna completed internships at the Austrian news publications Die Presse and profil and is a regular contributor for profil wissen, the Austrian science magazine. 
+                        </p>
+                        <p></p>
+
+                       
+                      
+                        <p class='german' style='display:none'>Anna Goldenberg schreibt, fotografiert und mixt Geschichten in Englisch und in Deutsch. Ihre journalistischen Arbeiten erschienen bisher u.a. in den österreichischen Nachrichtenpublikationen Presse und profil. Anna ist freie Mitarbeite Für das österreichische Wissenschaftsmagazin </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class='row'>
+                <legend>Contact</legend>
+            </div>
+            <div id='contact-container'>
+                <address>
+                    <div class='icon-container'><i class='icon-envelope'></i></div>a.j.goldenberg [at] gmail.com<br>
+                    <div class='icon-container'><i class='icon-phone'></i></div>+1-917-664-5930 <i>US</i><br>
+                    <div class='icon-container'><i class='icon-phone'></i></div>+43-650-3050212 <i>Austria</i><br>
+                    <div class='icon-container'><i class='icon-twitter'></i></div>@angoldna
+                </address>
+            </div>
+
+            <!-- Print -->
+            <div class='row'>
+                <legend>Print</legend>
+            </div>
+            <div id='print-container'></div>
+
+            <!-- Audio -->
+            <div class='row'>
+                <legend>Audio</legend>
+            </div>
+            <div id='audio-container'></div>
+
+            <div class='row'>
+                <legend>Visual</legend>
+
+                <div id='carousel' class='carousel slide'>
+                    <!-- Pictures and captions -->
+                    <div class='carousel-inner'>
+                        <div class='item active'>
+                            <img src='carousel/1.jpg'>
+                            <div class='carousel-caption'>
+                                <h4>First Thumbnail label</h4>
+                            </div>
+                        </div>
+                        <div class='item'>
+                        <img src='carousel/2.jpg'>
+                            <div class='carousel-caption'>
+                                <h4>Second Thumbnail label</h4>
+                            </div>
+                        </div>
+                        <div class='item'>
+                            <img src='carousel/3.jpg'>
+                            <div class='carousel-caption'>
+                                <h4>Third Thumbnail label</h4>
+                            </div>
+                        </div>
+                        <div class='item'>
+                            <img src='carousel/4.jpg'>
+                            <div class='carousel-caption'>
+                                <h4>Third Thumbnail label</h4>
+                            </div>
+                        </div>
+                        <div class='item'>
+                            <img src='carousel/5.jpg'>
+                            <div class='carousel-caption'>
+                                <h4>Third Thumbnail label</h4>
+                            </div>
+                        </div>
+                        <div class='item'>
+                            <img src='carousel/6.jpg'>
+                            <div class='carousel-caption'>
+                                <h4>Third Thumbnail label</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class='left carousel-control' href='#carousel' data-slide='prev'>‹</a>
+                    <a class='right carousel-control' href='#carousel' data-slide='next'>›</a>
+
+                    <!-- More pictures -->
+                    <br>
+                    <p class='lead'>For more photojournalistic work, visit <a href='https://angoldna.jux.com/'>angoldna.jux.com</a>.</p>
+                </div>
+            </div>
+
+            <div id='push'></div>
+        </div>
+    </div>
+
+    <div id='footer'>
+        <div class='container'>
+            <span class='credit'>© Anna Goldenberg, 2013.</span>
+            <div class='credit pull-right'>
+                <a href='http://www.linkedin.com/pub/anna-goldenberg/57/25a/92b' target='_blank'><i class='icon-linkedin-sign'></i></a>
+                <a href='https://www.facebook.com/goldenzwerg' target='_blank'><i class='icon-facebook-sign'></i></a>
+                <a href='https://twitter.com/angoldna' target='_blank'><i class='icon-twitter-sign'></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script type='mustache' id='template-publications'>
+        {{#publications}}
+        <div class='row'>
+            <div class='span3 publication-title'>
+                <b>{{title}}</b>
+                <div><i>{{location}}</i></div>
+            </div>
+            {{#articles}}
+                <div class='span1 article-date'>
+                    <p class='lead'><i>{{date}}</i></p>
+                </div>
+                <div class='span8'>
+                    <p href='{{url}}' class='lead article-title'>{{title}}</p>
+                </div>
+            {{/articles}}
+        </div> 
+        {{/publications}}
+    </script>
+</body>

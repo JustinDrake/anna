@@ -1,0 +1,29 @@
+#title {
+	margin: auto;
+	font-size: 120px;
+	color: #fff;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	-webkit-transition: all .2s ease-in-out;
+	   -moz-transition: all .2s ease-in-out;
+	        transition: all .2s ease-in-out;
+}
+
+#title:hover {
+ 	color: #444;
+	text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
+.center {
+	text-align: center;
+	margin-top: 150px;
+}
+
+#button {
+	margin: auto;
+}
+
+body {
+	background-image: url('./../img/background.jpg');
+	background-size: cover;
+	font-family: 'Helvetica Neue';
+}
