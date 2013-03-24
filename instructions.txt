@@ -1,0 +1,36 @@
+Note: Every command typed in the terminal should be "Enter"ed.
+
+To update to the latest version (do this before making changes, to avoid conflicts)
+-----------------------------------------------------------------------------------
+
+`cd` into the root "anna website" directory (either drag folder, or type in, or use "tab completion")
+`git pull origin master`
+
+To record changes made to the website (after changes done) and make them available for Justin
+---------------------------------------------------------------------------------------------
+
+`cd` into the root directory
+`git add -A :/`
+`git commit -m "Small explanation of changes made"`
+`git push`
+
+To deploy the website version your have on your computer
+--------------------------------------------------------
+
+`cd` into the `server` directory
+`jitsu deploy` (follow instructions on screen; just type enter)
+
+To test out changes made on the website
+---------------------------------------
+
+Simply open the relevant `.html` file in the your browser.
+
+To add print or audio articles
+------------------------------
+
+Modify the file `server/client/js/data.js`
+
+To modify any other text (e.g. bio, captions, titles, footer)
+-------------------------------------------------------------
+
+Modify the file `server/client/index.html` or `server/client/intro.html`

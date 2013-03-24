@@ -1,0 +1,12 @@
+-Fix the spacing between the articles (and audios)
+-Animate the navbar
+-Background picture persistence
+-Make the twitter handle into link
+
+
+Anna todo:
+
+-Bio
+-German articles
+-Captions
+-Add all remaining print article links
