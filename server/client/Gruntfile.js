@@ -32,7 +32,8 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'js/data.js',
+                'js/*.js',
+                '../server.js'
             ]
         },
         imagemin: {

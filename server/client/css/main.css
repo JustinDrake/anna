@@ -6,6 +6,7 @@ body {
 
 html {
     height: 100%;
+    margin-top: 50px;
 }
 
 #wrap {
@@ -55,17 +56,12 @@ b {
 }
 
 .publication-title {
-    margin-top: 5px;
-    margin-bottom: 50px;
+    margin-bottom: -40px;
 }
 
 .article-title:hover {
     text-decoration: underline;
     cursor: pointer;
-}
-
-#print-container .row {
-    margin-top: 15px;
 }
 
 .carousel {
@@ -87,4 +83,9 @@ b {
     height: 14px !important;
     margin-right: 15px;
     margin-bottom: 12px;
+}
+
+#bio-container {
+    text-align:justify;
+    text-justify:inter-word;
 }
