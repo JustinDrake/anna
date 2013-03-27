@@ -5,14 +5,14 @@ $(function () {
     // Publications
     var templatePulications = $('#template-publications').text();
 
-    // Populate the print publications
-    $('#print-container').html(Mustache.to_html(templatePulications, printArticles));
-
-    // Populate the audio publications
-    $('#audio-container').html(Mustache.to_html(templatePulications, audioArticles));
-
-    // Populate the carousel images
-    $('#carousel-container').html(Mustache.to_html($('#template-carousel').text(), carouselImages));
+    // Populate
+    $('.navbar').html(Mustache.to_html($('#template-navbar').text(), sectionsData));
+    $('#wrap .container').html(Mustache.to_html($('#template-sections').text(), sectionsData));
+    $('#Bio-container').html(Mustache.to_html($('#template-bio').text(), printData));
+    $('#Contact-container').html(Mustache.to_html($('#template-contact').text(), printData));
+    $('#Print-container').html(Mustache.to_html(templatePulications, printData));
+    $('#Audio-container').html(Mustache.to_html(templatePulications, audioData));
+    $('#Visual-container').html(Mustache.to_html($('#template-carousel').text(), visualData));
 
     // Deal with article clicks
     $('p').on('click', function () {
@@ -35,11 +35,22 @@ $(function () {
 
     // Navbar
     $('.nav').on('click', 'li', function () {
-        $(this).addClass('.active');
+        var $this = $(this);
+
+        $this
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+
+        $('html, body').animate({
+            scrollTop: $('#' + $this.data('name') + '-legend').offset().top - 50 + 'px'
+        }, 'fast');
     });
 
-    $('html, body').animate({
-        scrollTop: $('#contact-legend').offset().top - 50 + 'px'
-    }, 'fast');
+    // Select bio upon entry
+    $('.nav li').first().click();
 
+    // Remove space at the end of the publications
+    $('#Print-container .dummy-space').last().css('margin-bottom', '-10px');
+    $('#Audio-container .dummy-space').last().css('margin-bottom', '-10px');
 });

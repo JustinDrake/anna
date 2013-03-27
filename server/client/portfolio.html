@@ -2,117 +2,32 @@
 
 <head>
     <meta charset='utf-8' http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <link href='img/favicon.ico' rel='shortcut icon'>
     <title>Anna Goldenberg</title>
 
+    <link href='css/lib/bootstrap.css' rel='stylesheet'>
+    <link href='css/lib/font-awesome.css' rel='stylesheet'>
     <link href='css/main.css' rel='stylesheet'>
-    <link href='css/bootstrap.css' rel='stylesheet'>
-    <link href='css/font-awesome.css' rel='stylesheet'>
+    <link href='css/footer.css' rel='stylesheet'>
 
-    <link href='img/favicon.ico' rel='shortcut icon'> <!-- ??? Doesn't work -->
-
-    <!-- Library -->
     <script src='js/lib/jquery.js'></script>
     <script src='js/lib/bootstrap.js'></script>
     <script src='js/lib/carousel.js'></script>
     <script src='js/lib/mustache.js'></script>
 
-    <!-- Application -->
-    <script src='js/data.js'></script>
+    <script src='js/data/sections.js'></script>
+    <script src='js/data/audio.js'></script>
+    <script src='js/data/print.js'></script>
+    <script src='js/data/visual.js'></script>
+
     <script src='js/main.js'></script>
 </head>
 
 <body>
-    <div class='navbar navbar-fixed-top'>
-        <div class='navbar-inner'>
-            <div class='container'>
-                <div class='brand'>Anna Goldenberg</div>
-                <div>
-                    <ul class='nav panes-nav english'>
-                        <li class='active'><a>Bio</a></li>
-                        <li><a>Contact</a></li>
-                        <li><a>Print</a></li>
-                        <li><a>Visual</a></li>
-                        <li><a>Audio</a></li>
-                    </ul>
-                    <ul class='nav panes-nav german' style='display:none'>
-                        <li class='active'><a>Biografie</a></li>
-                        <li><a>Kontakt</a></li>
-                        <li><a>Print</a></li>
-                        <li><a>Foto</a></li>
-                        <li><a>Audio</a></li>
-                    </ul>
-                </div>
-                <div class='pull-right'>
-                    <div class='btn-group' data-toggle='buttons-radio'>
-                        <span class='btn active' id='english'>English</span>
-                        <span class='btn' id='german'>Deutsch</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class='navbar navbar-fixed-top'></div>
 
     <div id='wrap'>
-        <div class='container'>
-            <!-- Bio -->
-            <div class='row' id='bio-legend'>
-                <legend>Bio</legend>
-            </div>
-            <div id='bio-container'>
-                <div class='row well'>
-                    <div class='span4'>
-                        <img src='img/bio.jpg'/>
-                    </div>
-                    <div class='span7'>
-                        <div class='english'>
-                            <p>Anna Goldenberg is a multimedia journalist publishing in both English and German. Anna is currently completing her graduate degree in Digital Media at the Columbia University Graduate School of Journalism, which gave her the chance to pursue the widest variety of stories possible using an Olympus recorder, a DSLR camera and a notepad. She reported from polling sites, civil courts, yeshivas, Scrabble tournaments and neuroscience laboratories for Brooklyncampaign.com, The New York World and Uptown Radio.</p>
-                            <p>Born and bred in Austria, Anna earned her B.A. in Politics, Psychology and Sociology at the University of Cambridge, UK, where she wrote for the student newspapers Varsity and The Cambridge Student. Anna completed internships at the Austrian news publications Die Presse and profil and is a regular contributor for profil wissen, the Austrian science magazine.
-                            </p>
-
-                            <p>When she is not reporting, Anna loves organizing events. Anna was a youth group leader for several years, where she coordinated several multi-day camps, and served as the international representative for Girton College at Cambridge, hosting an orientation week for incoming students. She also enjoys planning dinner parties, hiking tours and movie nights for her family and friends.
-                        </div>
-                        <div class='german' style='display:none'>
-                            <p>Anna Goldenberg schreibt, fotografiert und mixt Geschichten in Englisch und in Deutsch. Ihre journalistischen Arbeiten erschienen bisher u.a. in den österreichischen Nachrichtenpublikationen Die Presse und profil. Anna ist Teil der Redaktion des österreichischen Wissenschaftsmagazins profil wissen.</p>
-                            <p>Die gebürtige Wienerin schließt im Mai 2013 ihr Studium in Digital Media an der Columbia University Graduate School of Journalism in New York mit einem Master ab. Ihren Bachelor in Politik, Psychologie und Soziologie hat Anna von der University of Cambridge, UK, wo sie regelmäßig für die Studentenpublikationen Varsity und The Cambridge Student schrieb.</p>
-                            <p>Annas journalistische Interessen gelten den Menschen hinter den Schlagzeilen. Sie berichtete über Neurowissenschaften, Wahlkampagnen, Wallfahrten, Scheidungskinder, Gerichtsurteile, Scrabble-Meisterschaften und vieles mehr.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact -->
-            <div class='row' id='contact-legend'>
-                <legend>Contact</legend>
-            </div>
-            <div id='contact-container'>
-                <address>
-                    <div class='icon-container'><i class='icon-envelope'></i></div>a.j.goldenberg [at] gmail.com<br>
-                    <div class='icon-container'><i class='icon-phone'></i></div>+1-917-664-5930 <i>US</i><br>
-                    <div class='icon-container'><i class='icon-phone'></i></div>+43-650-3050212 <i>Austria</i><br>
-                    <div class='icon-container'><i class='icon-twitter'></i></div>@angoldna
-                </address>
-            </div>
-
-            <!-- Print -->
-            <div class='row'>
-                <legend>Print</legend>
-            </div>
-            <div id='print-container'></div>
-
-            <!-- Audio -->
-            <div class='row'>
-                <legend>Audio</legend>
-            </div>
-            <div id='audio-container'></div>
-
-            <div class='row'>
-                <legend>Visual</legend>
-
-                <div id='carousel-container'></div>
-            </div>
-
-            <div id='push'></div>
-        </div>
+        <div class='container'></div>
     </div>
 
     <div id='footer'>
@@ -125,6 +40,27 @@
             </div>
         </div>
     </div>
+
+    <script type='mustache' id='template-navbar'>
+        <div class='navbar-inner'>
+            <div class='container'>
+                <div class='brand'><i class='icon-heart'></i> Anna Goldenberg <i class='icon-heart'></i></div>
+                <div>
+                    <ul class='nav panes-nav'>
+                        {{#sections}}
+                            <li data-name={{name}}><a class='english'>{{name}}</a><a class='german' style='display:none'>{{german}}</a></li>
+                        {{/sections}}
+                    </ul>
+                </div>
+                <div class='pull-right'>
+                    <div class='btn-group' data-toggle='buttons-radio'>
+                        <span class='btn active' id='english'>English</span>
+                        <span class='btn' id='german'>Deutsch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
 
     <script type='mustache' id='template-publications'>
         {{#publications}}
@@ -143,7 +79,7 @@
                     <p href='{{url}}' class='lead article-title'>{{title}}</p>
                 </div>
             {{/articles}}
-            <div style='margin-bottom:35px'>&nbsp;</div>
+            <div class='span12 dummy-space'>&nbsp;</div>
         </div>
         {{/publications}}
     </script>
@@ -161,13 +97,54 @@
                 {{/images}}
             </div>
 
-            <!-- Controls -->
             <a class='left carousel-control' href='#carousel' data-slide='prev'>‹</a>
             <a class='right carousel-control' href='#carousel' data-slide='next'>›</a>
 
-            <!-- More pictures -->
             <br>
-            <p class='lead'>For more photojournalistic work, visit <a href='https://angoldna.jux.com/'>angoldna.jux.com</a>.</p>
+            <p class='lead'>For more photojournalistic work, visit <a href='angoldna.jux.com/'>angoldna.jux.com</a>.</p>
         </div>
+    </script>
+
+    <script type='mustache' id='template-bio'>
+        <div class='well row'>
+            <div class='span4' id='biopic-container'>
+                <center>
+                    <img src='img/bio.jpg'/>
+                </center>
+            </div>
+            <div class='span7' id='biotext-container'>
+                <div class='english'>
+                    <p>Anna Goldenberg is a multimedia journalist publishing in both English and German. Anna is currently completing her graduate degree in Digital Media at the Columbia University Graduate School of Journalism, which gave her the chance to pursue the widest variety of stories possible using an Olympus recorder, a DSLR camera and a notepad. She reported from polling sites, civil courts, yeshivas, Scrabble tournaments and neuroscience laboratories for Brooklyncampaign.com, The New York World and Uptown Radio.</p>
+                    <p>Born and bred in Austria, Anna earned her B.A. in Politics, Psychology and Sociology at the University of Cambridge, UK, where she wrote for the student newspapers Varsity and The Cambridge Student. Anna completed internships at the Austrian news publications Die Presse and profil and is a regular contributor for profil wissen, the Austrian science magazine.
+                    </p>
+
+                    <p>When she is not reporting, Anna loves organizing events. Anna was a youth group leader for several years, where she coordinated several multi-day camps, and served as the international representative for Girton College at Cambridge, hosting an orientation week for incoming students. She also enjoys planning dinner parties, hiking tours and movie nights for her family and friends.
+                </div>
+                <div class='german' style='display:none'>
+                    <p>Anna Goldenberg schreibt, fotografiert und mixt Geschichten in Englisch und in Deutsch. Ihre journalistischen Arbeiten erschienen bisher u.a. in den österreichischen Nachrichtenpublikationen Die Presse und profil. Anna ist Teil der Redaktion des österreichischen Wissenschaftsmagazins profil wissen.</p>
+                    <p>Die gebürtige Wienerin schließt im Mai 2013 ihr Studium in Digital Media an der Columbia University Graduate School of Journalism in New York mit einem Master ab. Ihren Bachelor in Politik, Psychologie und Soziologie hat Anna von der University of Cambridge, UK, wo sie regelmäßig für die Studentenpublikationen Varsity und The Cambridge Student schrieb.</p>
+                    <p>Annas journalistische Interessen gelten den Menschen hinter den Schlagzeilen. Sie berichtete über Neurowissenschaften, Wahlkampagnen, Wallfahrten, Scheidungskinder, Gerichtsurteile, Scrabble-Meisterschaften und vieles mehr.</p>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script type='mustache' id='template-contact'>
+        <div class='icon-container'><i class='icon-envelope'></i></div><span>a.j.goldenberg [at] gmail.com<br></span>
+        <div class='icon-container'><i class='icon-phone'></i></div><span>+1-917-664-5930 <i>US</i><br></span>
+        <div class='icon-container'><i class='icon-phone'></i></div><span>+43-650-3050212 <i>Austria</i><br></span>
+        <div class='icon-container'><i class='icon-twitter'></i></div><a href='https://twitter.com/angoldna' target='_blank' id='twitter-handle'>@angoldna</a>
+    </script>
+
+    <script type='mustache' id='template-sections'>
+        {{#sections}}
+        <div class='row' id='{{name}}-legend'>
+            <legend class='english'>{{name}}</legend>
+            <legend class='german' style='display:none'>{{german}}</legend>
+        </div>
+        <div id='{{name}}-container'></div>
+        {{/sections}}
+
+        <div id='push'></div>
     </script>
 </body>

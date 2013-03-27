@@ -1,0 +1,41 @@
+body {
+    background-image: none;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+    margin-top: 50px;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px;
+}
+
+#push, #footer {
+    height: 50px;
+}
+
+#footer {
+    background-color: #f5f5f5;
+}
+
+.credit {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #777777;
+}
+
+#footer i {
+    color: #777777;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#footer i:hover {
+    text-decoration: none;
+}

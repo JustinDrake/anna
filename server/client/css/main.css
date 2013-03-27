@@ -1,46 +1,3 @@
-body {
-    background-image: none;
-    background-size: cover;
-    height: 100%;
-}
-
-html {
-    height: 100%;
-    margin-top: 50px;
-}
-
-#wrap {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -50px;
-}
-
-#push, #footer {
-    height: 50px;
-}
-
-#footer {
-    background-color: #f5f5f5;
-}
-
-.credit {
-    display: inline-block;
-    margin-top: 15px;
-    margin-left: 10px;
-    color: #777777;
-}
-
-#footer i {
-    color: #777777;
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-#footer i:hover {
-    text-decoration: none;
-}
-
 p.lead {
     font-size: 16px !important;
     margin-bottom: 0px;
@@ -48,15 +5,14 @@ p.lead {
 
 b {
     font-size: 16px !important;
-    /*font-weight: 500 !important;*/
-}
-
-.publication li {
-    list-style-type: none !important;
 }
 
 .publication-title {
     margin-bottom: -40px;
+}
+
+.article-title {
+    margin-left: 30px;
 }
 
 .article-title:hover {
@@ -64,17 +20,19 @@ b {
     cursor: pointer;
 }
 
+#twitter-handle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav li {
+    cursor: pointer;
+}
+
 .carousel {
     width: 800px;
     margin: 0 auto;
-}
-
-.article-title {
-    margin-left: 30px;
-}
-
-.articles {
-    /*margin-top: -10px;*/
+    margin-bottom: 40px;
 }
 
 .icon-container {
@@ -85,7 +43,19 @@ b {
     margin-bottom: 12px;
 }
 
-#bio-container {
-    text-align:justify;
-    text-justify:inter-word;
+#Bio-container {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.dummy-space {
+    margin-bottom: 25px;
+}
+
+#biopic-container {
+    margin-left: 0px;
+}
+
+#biotext-container {
+    width: 555px;
 }
