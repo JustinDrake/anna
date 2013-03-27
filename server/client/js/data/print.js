@@ -68,6 +68,18 @@ var printData = {
             title: 'profil wissen',
             location: 'Vienna, Austria',
             articles: [{
+                title: 'Das schräge Experiment: Luftsprünge, physikalisch'
+                url:'./pdf/prof1301_wiss_EXPERIMENT.pdf'
+                date:''
+            }, {
+                title: 'Einblick: Magische Welten',
+                url: './pdf/prof1301_wiss_EINBLICK.pdf',
+                date: '2013/03/15'
+            }, {
+                title: 'Zahltag',
+                url: './pdf/prof1301_wiss_ZAHLTAG.pdf',
+                date: ''
+            }, {
                 title: 'Einblick: Erschütternd (Erdbebenkarte)',
                 url: './pdf/prof1203_wiss_EINBLICK.pdf',
                 date: '2012/09/05'
