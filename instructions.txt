@@ -1,3 +1,4 @@
+
 Note: Every command typed in the terminal should be "Enter"ed.
 
 To update to the latest version (do this before making changes, to avoid conflicts)
