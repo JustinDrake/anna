@@ -45,17 +45,17 @@ b {
 
 #Bio-container {
     text-align: justify;
-    text-justify: inter-word;
 }
 
 .dummy-space {
     margin-bottom: 25px;
 }
 
-#biopic-container {
+#biopic-container p{
     margin-left: 0px;
 }
 
 #biotext-container {
     width: 555px;
+    font-size: 14px;
 }

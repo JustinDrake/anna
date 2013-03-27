@@ -56,25 +56,25 @@ var printData = {
             title: 'The Cambridge Student',
             location: 'Cambridge, United Kingdom',
             articles: [{
-                title: 'Eyewitness: Austrian Students in Protest',
-                url: 'http://www.tcs.cam.ac.uk/issue/international/eyewitness-austrian-students-in-protest/#more-4825',
-                date: '2009/11/21'
-            },{
                 title: 'Hour Flower Power. How a children\'s book and an American psychologist show us the importance of time',
                 url: './pdf/TCS_HourFlowerPower.pdf',
                 date: '2010/04/22'
+            },{
+                title: 'Eyewitness: Austrian Students in Protest',
+                url: 'http://www.tcs.cam.ac.uk/issue/international/eyewitness-austrian-students-in-protest/#more-4825',
+                date: '2009/11/21'
             }]
         }, {
             title: 'profil wissen',
             location: 'Vienna, Austria',
             articles: [{
-                title: 'Das schräge Experiment: Luftsprünge, physikalisch'
-                url:'./pdf/prof1301_wiss_EXPERIMENT.pdf'
-                date:''
+                title: 'Das schräge Experiment: Luftsprünge, physikalisch',
+                url:'./pdf/prof1301_wiss_EXPERIMENT.pdf',
+                date: '2013/03/15'
             }, {
                 title: 'Einblick: Magische Welten',
                 url: './pdf/prof1301_wiss_EINBLICK.pdf',
-                date: '2013/03/15'
+                date: ''
             }, {
                 title: 'Zahltag',
                 url: './pdf/prof1301_wiss_ZAHLTAG.pdf',

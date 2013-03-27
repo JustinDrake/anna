@@ -1,14 +1,5 @@
 Justin TODO:
 
--Fix the spacing between the articles (and audios)
--Animate the navbar
+-Animate the navbar when scrolling
 -Background picture persistence
--Make the twitter handle into link
 -Make the font of the bio the same as for the articles
-
-Anna TODO:
-
--Bio
--German articles
--Captions
--Add all remaining print article links

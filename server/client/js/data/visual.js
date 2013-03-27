@@ -16,7 +16,7 @@ var visualData = {
         }, {
             name: '4.jpg',
             caption: 'La Mia, 26, left, and Ronald Lewis, 26, are best friends and walk La Mia\'s dog Chance at Central Park in New York City',
-            german: 'La Mia, 26, links und Ronald Lewis, 26, sind beste Freunde und gemeinsam mit La Mias Hund Chance im Central Park in New York City'
+            german: 'Beste Freunde: La Mia, 26, links und Ronald Lewis, 26, gemeinsam mit Hund Chance in New Yorks Central Park'
         }, {
             name: '5.jpg',
             caption: 'Mark Mirasol, 24, and Lily Prentice, 23, at Central Park West in New York City',
@@ -24,7 +24,7 @@ var visualData = {
         }, {
             name: '6.jpg',
             caption: 'Houses on the Lower East Side, New York\'s historic immigrant district, reflected in windows of the Tenement Museum',
-            german: 'In den Schaufenstern des Tenement Museums spiegeln sich die Häuser der Lower East Side, New Yorks ehemaligen Zuwandererviertels'
+            german: 'Häuser an der Lower East Side in New York spiegeln sich in den Fenstern eines lokalen Museums'
         }
     ]
 };
