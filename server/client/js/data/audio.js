@@ -4,6 +4,26 @@ var audioData = {
             title: 'UptownRadio',
             location: 'New York, NY',
             articles: [{
+                title: 'Learning from the Struggle of Survivors',
+                url: 'http://uptownradio.org/2013/04/26/learning-from-the-struggle-of-survivors/',
+                date: '2013/04/26'
+            }, {
+                title: 'Excitement and Preparation for City\'s Bikeshare Program',
+                url: 'http://uptownradio.org/2013/04/22/excitement-and-preparation-for-citys-bikeshare-program/',
+                date: '2013/04/19'
+            }, {
+                title: 'Newscast for New York City on Friday, April 19, 2013',
+                url: 'http://uptownradio.org/2013/04/22/uptown-radios-local-newscast/',
+                date: '2013/04/19'
+            }, {
+                title: 'Sandy-Damaged Homes Receive Mortgage Relief',
+                url: 'http://uptownradio.org/2013/04/13/sandy-damaged-homes-receive-mortgage-relief/',
+                date: '2013/04/12'
+            }, {
+                title: 'Renting Out New York City',
+                url: 'http://uptownradio.org/2013/03/29/renting-out-new-york-city/',
+                date: '2013/03/29'
+            }, {
                 title: 'After Hurricane Sandy, MTA Seeks Alternatives to Subway',
                 url: 'http://uptownradio.org/2013/03/02/after-hurricane-sandy-mta-seeks-alternatives-to-subway/',
                 date: '2013/03/02'
