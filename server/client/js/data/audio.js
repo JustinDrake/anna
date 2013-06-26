@@ -4,6 +4,10 @@ var audioData = {
             title: 'UptownRadio',
             location: 'New York, NY',
             articles: [{
+                title: 'In Cell Phone Age, Pay Phones Still Getting Upgrades',
+                url: 'http://uptownradio.org/2013/05/12/in-cell-phone-age-pay-phones-still-not-going-away/',
+                date: '2013/05/10'
+            }, {
                 title: 'Learning from the Struggle of Survivors',
                 url: 'http://uptownradio.org/2013/04/26/learning-from-the-struggle-of-survivors/',
                 date: '2013/04/26'
@@ -19,6 +23,10 @@ var audioData = {
                 title: 'Sandy-Damaged Homes Receive Mortgage Relief',
                 url: 'http://uptownradio.org/2013/04/13/sandy-damaged-homes-receive-mortgage-relief/',
                 date: '2013/04/12'
+            }, {
+                title: 'Non-Partisan Elections Might Prevent Political Corruption',
+                url: 'http://uptownradio.org/2013/04/05/shady-new-york-politicians-draw-attention-to-corruption/',
+                date: '2013/04/05'
             }, {
                 title: 'Renting Out New York City',
                 url: 'http://uptownradio.org/2013/03/29/renting-out-new-york-city/',
