@@ -24,6 +24,18 @@ var printData = {
             title: 'profil wissen',
             location: 'Vienna, Austria',
             articles: [{
+                title: 'Das schräge Experiment: Bierflasche versus Schädel',
+                url:'./pdf/Schräges_Experiment.pdf',
+                date: '2013/06/19'
+            }, {
+                title: 'Einblick: 3D-Drucker',
+                url: './pdf/prof1302_wiss_EINBLICK.pdf',
+                date: ''
+            }, {
+                title: 'Zahltag',
+                url: './pdf/prof1302_wiss_ZAHLTAG.pdf',
+                date: ''
+            }, {
                 title: 'Das schräge Experiment: Luftsprünge, physikalisch',
                 url:'./pdf/prof1301_wiss_EXPERIMENT.pdf',
                 date: '2013/03/15'
