@@ -1,11 +1,9 @@
-
-
 Note: Every command typed in the terminal should be "Enter"ed.
 
 To update to the latest version (do this before making changes, to avoid conflicts)
 -----------------------------------------------------------------------------------
 
-`cd` into the root "anna website" directory (either drag folder, or type in, or use "tab completion")
+`cd` into the root "anna website" directory (either drag folder into terminal, or type in, or use "tab completion")
 `git pull origin master`
 
 To record changes made to the website (after changes done) and make them available for Justin

@@ -1,22 +1,22 @@
 var printData = {
     publications: [
-        {  
+        {
             title: 'The Jewish Daily Forward',
             location: 'New York, NY',
             articles: [{
-                 title: 'Shabbat Meals in Vienna: The Emperor\'s Embarrassment'
+                title: 'Shabbat Meals in Vienna: The Emperor\'s Embarrassment',
                 url: 'http://blogs.forward.com/the-jew-and-the-carrot/186083/shabbat-meals-in-vienna-the-emperor-s-embarrass/',
                 date: '2013/10/23'
-            }, {    
-                title: 'Rise of Austria\'s Far-Right Seen Through Eyes of Lone Jewish Lawmaker'
+            }, {
+                title: 'Rise of Austria\'s Far-Right Seen Through Eyes of Lone Jewish Lawmaker',
                 url: 'http://forward.com/articles/185729/rise-of-austrias-far-right-seen-through-eyes-of-lo/',
                 date: '2013/10/20'
-            }, {    
-                title: 'Mixing Israeli Food and Spirit in Berlin'
+            }, {
+                title: 'Mixing Israeli Food and Spirit in Berlin',
                 url: 'http://blogs.forward.com/the-jew-and-the-carrot/185256/mixing-israeli-food-and-spirit-in-berlin/',
                 date: '2013/10/09'
             }]
-    
+
             }, {
             title: 'profil wissen',
             location: 'Vienna, Austria',
@@ -173,8 +173,8 @@ var printData = {
                 url: 'http://www.tcs.cam.ac.uk/issue/international/eyewitness-austrian-students-in-protest/#more-4825',
                 date: '2009/11/21'
             }]
-        
-      
+
+
         }
     ]
 };
