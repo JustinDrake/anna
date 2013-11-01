@@ -1,29 +1,38 @@
 var printData = {
     publications: [
         {  
-            title: 'profil',
-            location: 'Vienna, Austria',
+            title: 'The Jewish Daily Forward',
+            location: 'New York, NY',
             articles: [{
-                   title: 'Manhattan Transfer: New York im Wahlkampf (mit Valerie Prassl)',
-                url: 'http://www.profil.at/articles/1316/560/356928/wahlkampf-new-york-manhattan-transfer',
-                date: '2013/04/14'
-            }, {
-                title: 'Systemausfall. World Wide Web: Macht das Internet dumm? (mit Tina Goebel)',
-                url: 'http://www.profil.at/articles/1209/560/320828/macht-internet-systemausfall',
-                date: '2012/03/02'
-            }, {
-                title: 'Der Ursprung des Menschen. Wie der Homo sapiens den Neanderthaler verdrängte (mit Tina Goebel)',
-                url: 'http://www.profil.at/articles/1131/560/303681/evolution-der-ursprung-menschen',
-                date: '2011/08/06'
-            }, {
-                title: 'Schockreaktion. Insektengiftallergien können ohne Vorwarnung auftreten. Eine Spritzenkur hilft, das Risiko zu verringern',
-                url: './pdf/prof1131_SCHOCK.pdf',
-                date: '2011/08/01'
+                 title: 'Shabbat Meals in Vienna: The Emperor\'s Embarrassment'
+                url: 'http://blogs.forward.com/the-jew-and-the-carrot/186083/shabbat-meals-in-vienna-the-emperor-s-embarrass/',
+                date: '2013/10/23'
+            }, {    
+                title: 'Rise of Austria\'s Far-Right Seen Through Eyes of Lone Jewish Lawmaker'
+                url: 'http://forward.com/articles/185729/rise-of-austrias-far-right-seen-through-eyes-of-lo/',
+                date: '2013/10/20'
+            }, {    
+                title: 'Mixing Israeli Food and Spirit in Berlin'
+                url: 'http://blogs.forward.com/the-jew-and-the-carrot/185256/mixing-israeli-food-and-spirit-in-berlin/',
+                date: '2013/10/09'
             }]
+    
             }, {
             title: 'profil wissen',
             location: 'Vienna, Austria',
             articles: [{
+                title: 'Das schräge Experiment: Labor-Porno',
+                url:'./pdf/prof1303_wiss_EXPERIMENT.pdf',
+                date: '2013/09/18'
+            }, {
+                title: 'Einblick: Das große Schweigen',
+                url: './pdf/prof1303_wiss_EINBLICK.pdf',
+                date: ''
+            }, {
+                title: 'Zahltag',
+                url: './pdf/prof1303_zahltag.pdf',
+                date: ''
+            }, {
                 title: 'Das schräge Experiment: Bierflasche versus Schädel',
                 url:'./pdf/Schräges_Experiment.pdf',
                 date: '2013/06/19'
@@ -79,6 +88,26 @@ var printData = {
                 title: 'Zahltag',
                 url: './pdf/prof1101_wissen_ZAHLTAG.pdf',
                 date: ''
+            }]
+        }, {
+            title: 'profil',
+            location: 'Vienna, Austria',
+            articles: [{
+                   title: 'Manhattan Transfer: New York im Wahlkampf (mit Valerie Prassl)',
+                url: 'http://www.profil.at/articles/1316/560/356928/wahlkampf-new-york-manhattan-transfer',
+                date: '2013/04/14'
+            }, {
+                title: 'Systemausfall. World Wide Web: Macht das Internet dumm? (mit Tina Goebel)',
+                url: 'http://www.profil.at/articles/1209/560/320828/macht-internet-systemausfall',
+                date: '2012/03/02'
+            }, {
+                title: 'Der Ursprung des Menschen. Wie der Homo sapiens den Neanderthaler verdrängte (mit Tina Goebel)',
+                url: 'http://www.profil.at/articles/1131/560/303681/evolution-der-ursprung-menschen',
+                date: '2011/08/06'
+            }, {
+                title: 'Schockreaktion. Insektengiftallergien können ohne Vorwarnung auftreten. Eine Spritzenkur hilft, das Risiko zu verringern',
+                url: './pdf/prof1131_SCHOCK.pdf',
+                date: '2011/08/01'
             }]
         }, {
             title: 'The NewYork World',
